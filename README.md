@@ -3,7 +3,7 @@
 
 Instructions
 
-1. Accept the assignment via the link: []
+1. Accept the assignment via the link: [https://classroom.github.com/a/A_fThHTU]
 1. A repo containing your username `xxxx-assignment-n-USERNAME` will be created.<br>
     Due to an ongoing technical reason, the assignment will be created at https://github.com/ucdavis-sta-assignments, not the class repo https://github.com/ucdavis-sta141c-sq-2020
 1. Create a new RStudio project with the repo containing your username  (do not clone the public repo `assignment-n`)
@@ -18,7 +18,7 @@ Visit https://happygitwithr.com/ for tutorials.
 
 
 Points: 10% of the course grade.
-Due Date: 5/1/2020 11:59 pm
+Due Date: 5/15/2020 11:59 pm
 
 
 
