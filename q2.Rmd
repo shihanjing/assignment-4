@@ -31,7 +31,7 @@ The goal of this package is to provide 4 functions to to convert between metric 
 - `pound_to_kilogram(p)`: `p / 2.205`
 - `kilogram_to_pound(kg)`: `kg * 2.205`
 
-You could pretty follow `https://r-pkgs.org/` chapter 2. However, please skip step 2.5 `use_git` - we don't need it because the assignment Rproj is already managing the nested package Rproj.
+You could pretty much follow the instructions in `https://r-pkgs.org/` chapter 2. However, please skip step 2.5 `use_git` - we don't need it because the assignment Rproj is already managing the nested package Rproj.
 
 You will need to do the followings.
 
