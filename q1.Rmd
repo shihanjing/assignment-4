@@ -1,0 +1,29 @@
+---
+title: "Question 1"
+---
+
+You are going to write some Rcpp code in this problem.
+
+
+##### (a) The R code `all(x > 0L)` is not very efficient if `x` is long  because a temporary logical vector `x == 1` was created. Write an Rcpp function `allgt(x, y)` which takes a numeric vector `x` (assume there are no missing values) and a double `y` that checks if all the elements in `x` are greater than `y`. Benchmark the RCpp function and the R code with vectors of of different proportions of positive numbers. Comment on what you observe.
+
+
+
+
+##### (b) Write an Rcpp function `varC(x)` which computes the sample variance of a numeric vector `x` (assume no missing values). Benchmark your function and compare with `var(x)`.
+
+Hint: 
+
+1. Use the computational formula of sample variance! 
+2. Sample variance is not defined if `length(x)` is 1, return `NaN` in this case.
+
+
+
+
+
+##### (c) Similar to (b), but now `x` may contain missing values. Write an Rcpp function `varC(x, na_rm)` that mimics the built in R function `var`:
+
+- when `x` contains missing values and `na_rm` is `FALSE`, returns `NA`;
+- when `x` contains missing values and `na_rm` is `TRUE`, ignores the missing values and computes the sample variance as is.
+
+Benchmark your function and compare with `var(x, na.rm = TRUE)` by considering vectors of different lengths and different proportions of missingness.

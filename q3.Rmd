@@ -1,0 +1,40 @@
+---
+title: "Question 3"
+---
+
+First we prepare some files to work with.
+
+```{r, message = FALSE}
+library(tidyverse)
+```
+
+```{r}
+dir.create("files", showWarnings = FALSE)
+set.seed(141)
+1:100 %>% walk(function(i) {
+    dt <- tibble(x = rnorm(5000), y = rnorm(5000))
+    write_csv(dt, file.path("files", sprintf("file%02d.csv", i)))
+})
+```
+
+In this question, we are going to familiarize ourself with the `parallel` package.
+
+In the folder `files`, there are some text files and each file contains 100 rows of numbers. The files names are
+```{r}
+file_names <- file.path("files", list.files("files"))
+```
+
+
+##### (a) Determine the correlation between `x` and `y` in each file using a single core.
+
+
+##### (b) Use `parLapply` to determine the correlation between `x` and `y` in each file.
+
+
+
+##### (c) Use `parLapplyLB` to determine the correlation between `x` and `y` in each file.
+
+
+
+##### (d) Benchmark part (a) to part (c). Comment on the speeds.
+

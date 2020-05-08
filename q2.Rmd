@@ -1,0 +1,42 @@
+---
+title: "Question 2"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+IMPORTANT! You don't need to knit this file. It is only meant for instructions.
+
+
+The following will start a new project called `mypackage`. You might encounter
+
+> New project 'myunits' is nested inside an existing project './', which is rarely a good idea.
+
+And it is expected. Create anyway.
+
+```{r}
+library(devtools)
+create_package("myunits")
+```
+
+After creating the packge project, a new RStudio window should be opened.
+
+The goal of this package is to provide 4 functions to to convert between metric and imperial units. 
+
+- `celsius_to_farenheit(dc)`: `9 * dc / 5 + 32`
+- `farenheit_to_celsius(df)`: `(df - 32) * 5 / 9`
+- `pound_to_kilogram(p)`: `p / 2.205`
+- `kilogram_to_pound(kg)`: `kg * 2.205`
+
+You could pretty follow `https://r-pkgs.org/` chapter 2. However, please skip step 2.5 `use_git` - we don't need it because the assignment Rproj is already managing the nested package Rproj.
+
+You will need to do the followings.
+
+- Implement the functions.
+- Write documentations.
+- Write simple tests using `testthat`.
+- Pass the `devtools::check()` test.
+- Do not forget to stage, commit and push your package at the end.
