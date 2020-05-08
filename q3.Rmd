@@ -19,7 +19,7 @@ set.seed(141)
 
 In this question, we are going to familiarize ourself with the `parallel` package.
 
-In the folder `files`, there are some text files and each file contains 100 rows of numbers. The files names are
+In the folder `files`, there are some text files and each file contains 5000 rows of numbers. The files names are
 ```{r}
 file_names <- file.path("files", list.files("files"))
 ```
