@@ -11,7 +11,7 @@ knitr::opts_chunk$set(eval = FALSE)
 IMPORTANT! You don't need to knit this file. It is only meant for instructions.
 
 
-The following will start a new project called `mypackage`. You might encounter
+The following will start a new project called `myunits`. You might encounter
 
 > New project 'myunits' is nested inside an existing project './', which is rarely a good idea.
 
@@ -24,7 +24,7 @@ create_package("myunits")
 
 After creating the packge project, a new RStudio window should be opened.
 
-The goal of this package is to provide 4 functions to to convert between metric and imperial units. 
+The goal of this package is to provide 4 functions to convert between metric and imperial units. 
 
 - `celsius_to_farenheit(dc)`: `9 * dc / 5 + 32`
 - `farenheit_to_celsius(df)`: `(df - 32) * 5 / 9`
