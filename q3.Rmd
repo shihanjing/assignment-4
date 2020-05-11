@@ -25,10 +25,12 @@ file_names <- file.path("files", list.files("files"))
 ```
 
 
-##### (a) Determine the correlation between `x` and `y` in each file using a single core.
+##### (a) Determine the correlation between `x` and `y` in each file without parallelization.
 
 
 ##### (b) Use `parLapply` to determine the correlation between `x` and `y` in each file.
+
+Hint: you should read the data in the workers.
 
 
 
